@@ -10,8 +10,8 @@ export default function FaqSection({ onOpenPitch }) {
   };
 
   return (
-    <section id="faq" className="py-24 relative border-t border-slate-800/80">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-24 relative border-t border-slate-800/80 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center mb-16">

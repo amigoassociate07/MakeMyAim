@@ -8,9 +8,10 @@ import {
   Compass,
   TrendingUp,
   Zap,
-  ArrowRight
+  ArrowRight,
+  Target
 } from 'lucide-react';
-import { FOUNDER_MINDSET, FOUNDER_TESTIMONIALS } from '../data/ventureData';
+import { BRAND_STORY, FOUNDER_MINDSET, FOUNDER_TESTIMONIALS } from '../data/ventureData';
 
 export default function TeamSection({ onOpenPitch }) {
   const [isOfficeHoursOpen, setIsOfficeHoursOpen] = useState(false);
@@ -48,8 +49,37 @@ export default function TeamSection({ onOpenPitch }) {
             <span className="italic text-gold-gradient">Investors Second.</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base font-light leading-relaxed">
-            We are not distant boardroom investors. We believe early-stage founders don't just need money—they need an authentic partner who guides them through unit economics, cash flow strategy, and the daily grind of building.
+            We are not distant boardroom investors. We believe early-stage founders don't just need capital—they need an authentic partner who takes ownership of their target and helps them hit the mark.
           </p>
+        </div>
+
+        {/* The Brand Story: Make My Aim Editorial Feature */}
+        <div className="glass-panel p-8 sm:p-12 rounded-3xl border border-gold-500/25 mb-16 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="max-w-3xl space-y-6 relative">
+            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-gold-400">
+              <Target className="w-4 h-4 text-gold-400" />
+              The Brand Story : Make My Aim
+            </div>
+            
+            <h3 className="text-2xl sm:text-4xl font-serif text-white tracking-tight leading-snug">
+              Why We Call Ourselves <span className="italic text-gold-gradient">Make My Aim.</span>
+            </h3>
+
+            <div className="space-y-4 text-sm sm:text-base text-slate-300 font-light leading-relaxed">
+              <p>
+                {BRAND_STORY.lead}
+              </p>
+              <p>
+                {BRAND_STORY.challenge}
+              </p>
+              <div className="p-4 sm:p-5 rounded-2xl bg-gold-500/[0.04] border-l-2 border-gold-400 text-white font-normal leading-relaxed">
+                <span className="text-gold-300 font-semibold block mb-1 font-mono text-xs uppercase tracking-wider">A Declaration Of Intent:</span>
+                "{BRAND_STORY.mission}"
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* 3 Core Mindset Principles */}
@@ -83,7 +113,7 @@ export default function TeamSection({ onOpenPitch }) {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-16">
             {FOUNDER_TESTIMONIALS.map((t, idx) => (
               <div 
                 key={idx}

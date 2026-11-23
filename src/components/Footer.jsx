@@ -26,10 +26,7 @@ export default function Footer({ onOpenPitch }) {
   };
 
   const offices = [
-    { city: 'Bengaluru', address: '100 Feet Rd, Indiranagar', state: 'Karnataka 560038' },
-    { city: 'Mumbai', address: 'Maker Maxity, Bandra Kurla Complex (BKC)', state: 'Maharashtra 400051' },
-    { city: 'Delhi NCR', address: 'One Horizon Center, Golf Course Rd, Gurugram', state: 'Haryana 122002' },
-    { city: 'Hyderabad', address: 'T-Hub Phase 2, HITEC City', state: 'Telangana 500081' }
+    { city: 'Indore', address: 'Vijay Nagar', state: 'Madhya Pradesh 452010' }
   ];
 
   return (
@@ -77,18 +74,18 @@ export default function Footer({ onOpenPitch }) {
             </div>
           </div>
 
-          {/* Indian Innovation Hubs (3 cols) */}
+          {/* Office Location (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-xs font-mono uppercase tracking-widest text-slate-300 flex items-center gap-2">
               <Building2 className="w-3.5 h-3.5 text-gold-400" />
-              Indian Innovation Hubs
+              Office & Headquarters
             </h4>
             <div className="space-y-3">
               {offices.map((office) => (
                 <div key={office.city} className="text-xs">
-                  <div className="font-semibold text-white">{office.city}</div>
-                  <div className="text-[11px] text-slate-400">{office.address}</div>
-                  <div className="text-[10px] text-slate-500 font-mono">{office.state}</div>
+                  <div className="font-semibold text-white text-sm">{office.city}</div>
+                  <div className="text-xs text-slate-300 mt-1">{office.address}</div>
+                  <div className="text-[11px] text-slate-400 font-mono mt-0.5">{office.state}</div>
                 </div>
               ))}
             </div>

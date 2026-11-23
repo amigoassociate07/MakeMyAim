@@ -73,13 +73,13 @@ export default function Navbar({ onOpenPitch, isMenuOpen: propIsMenuOpen, setIsM
               </div>
             </a>
 
-            {/* Desktop Navigation Links (>= 1024px) */}
-            <nav className="hidden lg:flex items-center gap-6 xl:gap-8 flex-shrink-0 mx-6">
+            {/* Desktop Navigation Links (>= 1024px) - Cleanly right-aligned, NO hamburger on full screen */}
+            <nav className="hidden lg:flex items-center gap-5 xl:gap-8 flex-shrink-0">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-xs uppercase tracking-[0.16em] font-medium text-slate-300 hover:text-gold-400 transition-colors duration-200 relative py-1 whitespace-nowrap group"
+                  className="text-[11px] xl:text-xs uppercase tracking-[0.14em] xl:tracking-[0.16em] font-medium text-slate-300 hover:text-gold-400 transition-colors duration-200 relative py-1 whitespace-nowrap group"
                 >
                   {link.name}
                   <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-gold-400 transition-all duration-300 group-hover:w-full" />
@@ -87,29 +87,17 @@ export default function Navbar({ onOpenPitch, isMenuOpen: propIsMenuOpen, setIsM
               ))}
             </nav>
 
-            {/* Right Side: Desktop Pitch Button + Minimalist Luxury Hamburger Lines (Matching Reference Image) */}
-            <div className="flex items-center gap-4 sm:gap-6 flex-shrink-0">
-              
-              {/* Desktop Pitch Button */}
-              <button
-                onClick={onOpenPitch}
-                className="hidden lg:flex items-center gap-2.5 px-6 py-2.5 bg-gradient-to-r from-gold-400 via-gold-500 to-amber-600 hover:from-gold-300 hover:to-gold-500 text-slate-950 rounded-sm text-xs tracking-[0.18em] uppercase font-bold whitespace-nowrap shadow-gold-subtle hover:shadow-gold-glow active:scale-95 transition-all"
-              >
-                <span>Pitch Vision</span>
-                <ArrowRight className="w-3.5 h-3.5 text-slate-950" />
-              </button>
-
-              {/* Minimalist 2-line Hamburger Menu Icon (Directly matching Vaidure reference image) */}
+            {/* Right Side: Hamburger Menu Icon (ONLY on mobile & tablet, 100% hidden on desktop full screen) */}
+            <div className="flex lg:hidden items-center flex-shrink-0">
               <button
                 onClick={() => setIsMenuOpen(true)}
                 className="p-2 -mr-1 text-white hover:text-gold-400 transition-colors focus:outline-none flex flex-col justify-center items-end gap-1.5 group cursor-pointer"
                 title="Open Navigation Menu"
                 aria-label="Open Navigation Menu"
               >
-                <span className="w-6 sm:w-7 h-[2px] bg-white group-hover:bg-gold-400 transition-colors rounded-full block" />
-                <span className="w-6 sm:w-7 h-[2px] bg-white group-hover:bg-gold-400 transition-colors rounded-full block" />
+                <span className="w-7 h-[2px] bg-white group-hover:bg-gold-400 transition-colors rounded-full block" />
+                <span className="w-7 h-[2px] bg-white group-hover:bg-gold-400 transition-colors rounded-full block" />
               </button>
-
             </div>
 
           </div>
@@ -198,7 +186,7 @@ export default function Navbar({ onOpenPitch, isMenuOpen: propIsMenuOpen, setIsM
 
                 <div className="text-center space-y-1">
                   <div className="text-[10px] font-mono text-gold-400/90 uppercase tracking-widest">
-                    Bengaluru • Mumbai • Delhi NCR • Hyderabad
+                    Indore, Madhya Pradesh • Pan-India Reach
                   </div>
                   <div className="text-[10px] text-slate-500">
                     © 2026 MakeMyAim Capital • Funding & Financial Support

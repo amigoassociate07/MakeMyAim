@@ -31,8 +31,8 @@ export default function Hero({ onOpenPitch, onOpenThesis }) {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Editorial Container - Strictly Left-Aligned on Mobile/Tablet matching Vaidure reference */}
-        <div className="max-w-4xl text-left">
+        {/* Editorial Container */}
+        <div className="w-full text-left">
           
           {/* Reference Kicker Line: Gold line + tracked uppercase subtitle (compact, guaranteed 1-line on mobile) */}
           <div className="flex items-center gap-3 mb-5 sm:mb-6">
@@ -42,19 +42,17 @@ export default function Hero({ onOpenPitch, onOpenThesis }) {
             </span>
           </div>
 
-          {/* Reference Headline: 3 Balanced Lines with Italic Gold Accent */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[76px] font-serif font-normal text-white mb-6 leading-[1.12] tracking-tight">
-            We Fund Every <br />
-            Bold Startup Vision <br />
+          {/* Reference Headline: Turning Ambition Into Action with Italic Gold Accent */}
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[82px] font-serif font-normal text-white mb-6 leading-[1.1] tracking-tight">
+            Turning Ambition <br />
             <span className="italic font-light text-gold-gradient">
-              With Capital & CFO.
+              Into Action.
             </span>
           </h1>
 
-          {/* Editorial Subtitle */}
+          {/* Editorial Subtitle based on Make My Aim Brand Story */}
           <p className="text-sm sm:text-base md:text-lg text-slate-300 font-light max-w-2xl mb-8 sm:mb-10 leading-relaxed font-sans">
-            Backing ambitious founders, early prototypes, and scaling enterprises across India. 
-            <strong className="text-white font-medium"> MakeMyAim Venture Capital</strong> provides ₹25 Lakhs to ₹35 Crores in direct growth capital paired with end-to-end financial management, cash flow strategy, and dedicated Virtual CFO support.
+            Every big achievement starts as an ambitious idea. Yet most goals stay stuck because founders lack the right roadmap, tools, or financial partner. <strong className="text-white font-medium">Make My Aim</strong> bridges the gap between wanting success and achieving it—taking ownership of your target with early seed funding, hands-on Virtual CFO guidance, and complete execution support.
           </p>
 
           {/* Reference Action Buttons: Solid Gold Rectangle + Dark Outlined Rectangle */}

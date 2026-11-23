@@ -118,6 +118,13 @@ export const PORTFOLIO_COMPANIES = [
   }
 ];
 
+export const BRAND_STORY = {
+  tagline: "Turning Ambition Into Action.",
+  lead: "Every big achievement starts as a quiet thought—an idea of where you want to be, what you want to build, or the standard you want to set.",
+  challenge: "Yet most goals stay stuck in the planning stage because people lack the right roadmap, tools, or partner to move forward.",
+  mission: "Make My Aim was built to bridge the gap between wanting success and achieving it. The name itself is a personal declaration of intent: when a client, partner, or founder chooses us, their objective becomes our top priority. We don’t just offer capital or services—we take ownership of your target and help you hit the mark every single time."
+};
+
 export const FOUNDER_MINDSET = {
   title: "Why MakeMyAim Exists & What We Believe",
   subtitle: "We started MakeMyAim with a singular conviction: early-stage founders in India don't just need capital—they need an authentic partner who guides them through the fire.",
@@ -133,8 +140,8 @@ export const FOUNDER_MINDSET = {
       tag: "Principle 02"
     },
     {
-      title: "Fast, Direct Decisions With Zero Red-Tape",
-      desc: "We don't make you wait through months of corporate investment committees. You talk directly with the decision maker, get honest feedback on your business model, and receive a clear commitment in 7 to 14 days.",
+      title: "Direct Ownership Of Your Target",
+      desc: "When you partner with MakeMyAim, your goal becomes our personal responsibility. We don't just write checks—we take ownership of your target and help you hit the mark every single time.",
       tag: "Principle 03"
     }
   ]

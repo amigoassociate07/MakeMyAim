@@ -256,7 +256,7 @@ export default function FounderPitchModal({ isOpen, onClose, initialData }) {
                       name="location"
                       value={formData.location}
                       onChange={handleChange}
-                      placeholder="e.g. Bengaluru, Mumbai, Delhi-NCR, Pune, Ahmedabad, or any city/town in India"
+                      placeholder="e.g. Indore, Bengaluru, Mumbai, Delhi-NCR, Pune, or any city/town in India"
                       className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-gold-400"
                     />
                   </div>
